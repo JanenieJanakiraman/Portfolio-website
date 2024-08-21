@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add the Google Fonts link if using an external font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6f183d05a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects & Experiences</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">See my CV / Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>sustainability-focused technophile</p>
+                <h1>Hi, I'm <span>Janenie Janakiraman.</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="description">I am fascinated by the potential of machine learning 
+                        and computer vision to drive change in the areas of accessibility 
+                        and sustainability. My technical background, coupled with a creative 
+                        approach to problem-solving, positions me to tackle real-world
+                         challenges with innovative solutions. As a student,
+                          I am committed to learning, growing, and making a tangible
+                           impact through meaningful projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>>> Java, Python, C, C++</li>
+                            <li><span>Data Visualization</span><br>>> Numpy, Pandas</li>
+                            <li><span>Machine Learning</span><br>>> TensorFlow, PyTorch, CNN, Resource Constrained AI</li>
+                            <li><span>Fullstack Development</span><br>>> HTML, CSS, JavaScript, MERN (MongoDB, ExpressJS, ReactJS, NodeJS), XML/REST APIs</li>
+                            <li><span>Electronic Thermal Management</span><br>>> Ansys-Icepack</li>
+                            <li><span>Computer Vision</span><br>>> OpenCV, YOLO</li>
+                            <li><span>Operating Systems</span><br>>> Windows, Linux shell scripting</li>
+                            <li><span>Data Analysis</span><br>>> Numpy, Pandas</li>
+                            <li><span>Android App Development</span><br>>> TensorFlow Lite, Android Studio, Kotlin</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Research Intern - ML and AI (Jun-Aug, 2024)</span><br>>> Carnegie Mellon University</li>
+                            <li><span>President, Technical Domain (Jan - Oct, 2023)</span><br>>> SRM IET, On Campus</li>
+                            <li><span>President, Content Writing (Oct-Jan, 2022)</span><br>>> SRM IET, On Campus</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SRM Institute of Science and Technology</span><br>>> CGPA: 9.15</li>
+                            <li><span>X Grade - SBOA School and Jr. College, Anna Nagar</span><br>>> 96.2%</li>
+                            <li><span>XII Grade - Chennai Public School, Anna Nagar</span><br>>> 93.2%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------projects--------->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i><br><br>
+                <h2>Diabetic Retinopathy detection through Lightweight CNN</h2>
+                <p>
+                    >> Explored various CNN architectures (DenseNet, MobileNet, ResNet, Xception, Inception) for diabetic retinopathy <br><br>
+                    >> Employed knowledge distillation to create a lighter student model mentored by DenseNet169.<br><br>
+                    >> Achieved 68.77% validation accuracy on a diverse Kaggle dataset, focusing on practical deployment in medical devices.<br><br>
+                    >> Based on previous research work, now focused on building a smartphone-based automated diabetic retinopathy detection system.
+                </p>
+                <a href="https://github.com/JanenieJanakiraman/Diabetic-Retinopathy" target="_blank">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-heart"></i><br><br>
+                <h2>Multi-Modal Learning and Fusion Techniques for Cardiac Disease Prediction</h2>
+                <p>
+                    >> Worked on exploring heart disease diagnosis using integrated echocardiographic, MRI, and ECG data (multimodal).<br><br>
+                    >> CNNs and fusion techniques were used to combine insights from different modalities.<br><br>
+                    >> Includes data cleaning, feature extraction, model training, and validation.
+                </p>
+                <a href="https://github.com/JanenieJanakiraman/Multi-Modal-Imaging-Analysis-for-Abnormality-Detection" target="_blank">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-laptop-code"></i><br><br>
+                <h2>GANs For Efficient Heatsink Design - Intel Lab, SRM IST</h2>
+                <p>
+                    >> Fine-tuned heatsink designs through GANs in collaboration with Intel Lab at SRM IST.<br><br>
+                    >> Research in thermal management for data centers and edge computing systems, utilizing machine learning to optimize cooling efficiency and energy efficiency.
+                </p>
+                <a href="https://github.com/JanenieJanakiraman/GANS-for-heat-sink-design" target="_blank">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-van-shuttle"></i><br><br>
+                <h2>Campus Aide</h2>
+                <p>
+                    >> Created a comprehensive safety and accessibility app with real-time emergency reporting and vehicle tracking capabilities.<br><br>
+                    >> Developed real-time safety notifications by handling extensive data from campus sensors and user inputs.<br><br>
+                    >> Designed interactive visualizations to monitor vehicle locations and improve shuttle services, boosting transportation efficiency.<br><br>
+                    >> Built a community engagement feature that integrates seamlessly with existing campus systems, facilitating user feedback on safety and accessibility.
+                </p>
+                <a href="https://github.com/FRAGGERR/Campus-Aide-" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!-----------Publications------------>
+
+<div id="publications">
+    <div class="container">
+        <h1 class="sub-title"> Publications and Accepted Papers (Conferences)</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png"><br><br>
+                <div class="layer">
+                    <h3>IEEE-ICOECA,2024</h3><br><br>
+                    <p>B. Baranidharan, Janenie J. and Hardik Chhipa, "Light Weight CNN Based on Knowledge Distillation for
+                        Diabetic Retinopathy Detection," 2024 International Conference on Expert Clouds and Applications
+                        (ICOECA), Bengaluru, India, 2024, pp. 860-864, doi: 10.1109/ICOECA62351.2024.00151. keywords:
+                        Knowledge engineering;Diabetic retinopathy;Analytical models;Accuracy;Medical
+                        devices;Manuals;Blindness;Diabetic Retinopathy;Convolutional Neural Networks;Knowledge
+                        Distillation;Teacher Student model<br><br>
+                    
+                        This research addresses Diabetic Retinopathy (DR),a major cause of blindness in diabetics, by exploring various
+                        Convolutional Neural Networks (CNNs) for precise diagnosis. 
+                        It introduces knowledge distillation to create a compact student 
+                        model from complex teacher models, with DenseNet169 showing 
+                        the highest accuracy. Using a Kaggle dataset, the study aims 
+                        to enhance DR detection and contribute to combating this 
+                        vision-threatening condition</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png"><br><br>
+                <div class="layer">
+                    <h3>ASME Interpack 2024</h3><br><br>
+                    <p>"Janenie J., Hardik Chhipa, Manas Singhal, and B. K. Gnanavel. "Innovations in Thermal Management for Data
+                        Centers and Edge Computing." Paper accepted at the ASME 2024 18th International Conference on Energy
+                        Sustainability (ES2024), Anaheim, California, July 15-17, 2024. ES2024-141129
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+       <!-- <div class="projects-list">
+            <div>
+                <h2>IEEE-ICOECA,2024<br><br>Diabetic Retinopathy detection through Lightweight CNN</h2>
+                <P> This research addresses Diabetic Retinopathy (DR),a major cause of blindness in diabetics, by exploring various
+                     Convolutional Neural Networks (CNNs) for precise diagnosis. 
+                     It introduces knowledge distillation to create a compact student 
+                     model from complex teacher models, with DenseNet169 showing 
+                     the highest accuracy. Using a Kaggle dataset, the study aims 
+                     to enhance DR detection and contribute to combating this 
+                     vision-threatening condition.</P>
+                    <a href="#">Learn More</a>
+
+            </div>
+
+            <div>
+                <h2>ASME INTERPACK- 2024<br><br>Next-Generation Electronics Packaging Technologies for High-Performance Applications</h2>
+                <P> >> During this research, examined advanced electronic packaging technologies that enhance system integration,
+                     signal integrity, and reliability. Key innovations include fan-out wafer-level packaging (FOWLP), chiplet integration,
+                      and embedded passives, which drive cost savings, adaptability, and performance improvements.
+                       Future advancements like heterogeneous and 3D integration are set to further transform electronics, enabling smaller, more efficient systems with diverse applications.
+                    <a href="#">Learn More</a>
+
+            </div>
+
+        </div>--->
+    </div>
+</div>
+
+<!--------contact------------------------------------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> janenie0541@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>+91 9840183544</p>
+                <div class="social-icons">
+            
+                    <a href="https://www.linkedin.com/in/janenie-janakiraman-299b10292/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Janenie_san" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://github.com/JanenieJanakiraman" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=F0_bKWgAAAAJ&hl=en&oi=ao" target="_blank">
+                        <i class="fa-brands fa-google-scholar"></i>
+                    </a>
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Your Name" required> 
+                   <input type="email" name="email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©  Janenie. Made with <i class="fa-solid fa-heart"></i> by Janenie Janakiraman</p>
+    </div>
+</div>
+    <script>
+        function opentab(tabname, event) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            var description = document.getElementById("description");
+
+            // Remove active classes from all tabs
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active class to the clicked tab and its content
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+            // Hide the description when a tab is active
+            description.style.display = "none";
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOvvSDlB46MV600TOgCagRJ0ViJwfLr7B1bEEcJw6dkuzSsXPLG1bPKZKlmAY3m9k/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
